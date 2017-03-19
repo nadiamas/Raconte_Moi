@@ -3,9 +3,9 @@
         android:id="@+id/activity_writing_drawing_manager"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="#FFCCCCCC"
         android:orientation="vertical"
-        tools:context="com.example.benz.raconte_moi.wrinting_from_drawing_fragment">
+        tools:context="com.example.benz.raconte_moi.wrinting_from_drawing_fragment"
+     android:background="@drawable/back">
 
         <LinearLayout
             android:layout_width="wrap_content"

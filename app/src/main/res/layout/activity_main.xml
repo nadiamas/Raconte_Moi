@@ -6,20 +6,23 @@
     android:layout_height="fill_parent"
     android:fitsSystemWindows="true"
     tools:context="com.example.benz.raconte_moi.MainActivity"
-    android:background="@drawable/backgroundlogin" >
+    android:background="@drawable/back" >
     <LinearLayout
         android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:paddingTop="56dp"
         android:paddingLeft="24dp"
-        android:paddingRight="24dp">
+        android:paddingRight="24dp"
+        android:weightSum="1">
 
-        <ImageView android:src="@drawable/logo"
+        <ImageView
             android:layout_width="wrap_content"
-            android:layout_height="72dp"
+            android:layout_height="150dp"
+            android:layout_gravity="center_horizontal"
             android:layout_marginBottom="24dp"
-            android:layout_gravity="center_horizontal" />
+            android:layout_weight="0.19"
+            android:src="@drawable/logo" />
 
     <android.support.design.widget.TextInputLayout
         android:layout_width="match_parent"
@@ -74,23 +77,25 @@
             android:text="Login"
             />
 
-        <TextView android:id="@+id/tvInscriptionLink"
+        <TextView
+            android:id="@+id/tvInscriptionLink"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="40dp"
             android:text="No account yet? Create one"
-            android:layout_gravity="center_horizontal"
-            android:layout_marginTop="40dp"
-            android:textColor="#FFF"/>
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/about_libraries_dividerDark_openSource_dark" />
 
-        <TextView android:id="@+id/tvOubliInfoLink"
+        <TextView
+            android:id="@+id/tvOubliInfoLink"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceMedium"
-            android:text="information recover"
             android:layout_gravity="center_horizontal"
             android:layout_marginTop="40dp"
-            android:textColor="#FFF"/>
+            android:text="information recover"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/about_libraries_dividerDark_openSource_dark" />
 
 
     </LinearLayout>
